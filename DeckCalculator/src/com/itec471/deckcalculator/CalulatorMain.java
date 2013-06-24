@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 /*
-TEST-Added by CA 6/24/13*/
+TEST-Added by CA 6/24/13 nore stuff*/
 public class CalulatorMain extends Activity {
 	public final static String SQFT_MESSAGE = "com.itec471.deckcalculator.MESSAGE";
 	public final static String[] messages = {"Total Sq Feet: ", "Materials: ", "Total Price: "};
