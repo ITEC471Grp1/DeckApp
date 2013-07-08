@@ -13,18 +13,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/edit_length"
-        android:inputType="numberSigned" />
+        android:inputType="number" />
     
     <EditText android:id="@+id/edit_width"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/edit_width"
-        android:inputType="numberSigned" />
+        android:inputType="number" />
+    
+    <EditText android:id="@+id/edit_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_height"
+        android:inputType="number" />
     
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_calculate"
-        android:onClick="overallCalc" />
+        android:onClick="initiateCalc" />
     
 </LinearLayout>
