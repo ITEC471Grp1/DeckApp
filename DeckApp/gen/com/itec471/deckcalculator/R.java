@@ -50,6 +50,14 @@ public final class R {
         public static final int edit_height=0x7f050004;
         public static final int edit_length=0x7f050002;
         public static final int edit_width=0x7f050003;
+        public static final int hardware_flashing=0x7f05000e;
+        public static final int hardware_holddown_anchor=0x7f05000f;
+        public static final int hardware_hurricane_clip=0x7f05000a;
+        public static final int hardware_joist_hanger=0x7f05000b;
+        public static final int hardware_post_anchor=0x7f05000d;
+        public static final int hardware_post_cap=0x7f05000c;
+        public static final int price_hardware_post_anchor=0x7f050011;
+        public static final int price_hardware_post_cap=0x7f050010;
         public static final int text_view=0x7f050008;
         public static final int title_activity_display_calculations=0x7f050007;
     }

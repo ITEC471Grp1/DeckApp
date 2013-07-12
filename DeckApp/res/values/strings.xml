@@ -11,5 +11,16 @@
     <string name="title_activity_display_calculations">Configuration Summary</string>
     <string name="text_view">       </string>
     <string name="calc_error">Unable to Calculate</string>
-
+    
+    
+    <string name="hardware_hurricane_clip">Hurricane Clip</string>
+	<string name="hardware_joist_hanger">Joist Hanger</string>
+	<string name="hardware_post_cap">Post Cap</string>
+	<string name="hardware_post_anchor">Post Anchor</string>
+	<string name="hardware_flashing">Flashing</string>
+	<string name="hardware_holddown_anchor">Hold-Down Anchor</string>
+	
+	<string name="price_hardware_post_cap">9.99</string>
+	<string name="price_hardware_post_anchor">4.59</string>
+	
 </resources>
