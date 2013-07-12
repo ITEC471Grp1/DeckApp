@@ -42,24 +42,28 @@ public final class R {
         public static final int display_calculations=0x7f070001;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int button_calculate=0x7f050005;
-        public static final int button_save=0x7f050006;
-        public static final int calc_error=0x7f050009;
-        public static final int edit_height=0x7f050004;
-        public static final int edit_length=0x7f050002;
-        public static final int edit_width=0x7f050003;
-        public static final int hardware_flashing=0x7f05000e;
-        public static final int hardware_holddown_anchor=0x7f05000f;
-        public static final int hardware_hurricane_clip=0x7f05000a;
-        public static final int hardware_joist_hanger=0x7f05000b;
-        public static final int hardware_post_anchor=0x7f05000d;
-        public static final int hardware_post_cap=0x7f05000c;
-        public static final int price_hardware_post_anchor=0x7f050011;
-        public static final int price_hardware_post_cap=0x7f050010;
-        public static final int text_view=0x7f050008;
-        public static final int title_activity_display_calculations=0x7f050007;
+        public static final int action_settings=0x7f05000d;
+        public static final int app_name=0x7f05000c;
+        public static final int button_calculate=0x7f050011;
+        public static final int button_save=0x7f050012;
+        public static final int calc_error=0x7f050015;
+        public static final int edit_height=0x7f050010;
+        public static final int edit_length=0x7f05000e;
+        public static final int edit_width=0x7f05000f;
+        public static final int hardware_flashing=0x7f050004;
+        public static final int hardware_holddown_anchor=0x7f050005;
+        public static final int hardware_hurricane_clip=0x7f050000;
+        public static final int hardware_joist_hanger=0x7f050001;
+        public static final int hardware_post_anchor=0x7f050003;
+        public static final int hardware_post_cap=0x7f050002;
+        public static final int price_hardware_flashing=0x7f05000a;
+        public static final int price_hardware_holddown_anchor=0x7f05000b;
+        public static final int price_hardware_hurricane_clip=0x7f050006;
+        public static final int price_hardware_joist_hanger=0x7f050007;
+        public static final int price_hardware_post_anchor=0x7f050009;
+        public static final int price_hardware_post_cap=0x7f050008;
+        public static final int text_view=0x7f050014;
+        public static final int title_activity_display_calculations=0x7f050013;
     }
     public static final class style {
         /** 
