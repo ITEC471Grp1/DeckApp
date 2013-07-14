@@ -1,4 +1,5 @@
 package com.itec471.deckcalculator;
+// Jamie 7/14
 
 public enum ComponentType {
 	UNKNOWN ("Unknown"),
@@ -6,7 +7,9 @@ public enum ComponentType {
 	JOISTS ("Joists"),
 	RIM_JOISTS ("Rim Joists"),
 	BEAMS ("Beams"),
-	POSTS ("Posts");
+	POSTS ("Posts"),
+	FASTENERS ("Fasteners"),
+	JOIST_HANGERS ("Joist Hangers");
 	
 	public final String NAME;
 	
