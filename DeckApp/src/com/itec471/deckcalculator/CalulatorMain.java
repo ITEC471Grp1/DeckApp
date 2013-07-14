@@ -1,7 +1,7 @@
 package com.itec471.deckcalculator;
 //Chris GitHub test 7/12
 // Jamie GitHub test 7/13
-//Chris GitHub test 7/14
+//Chris i hate GitHub test 7/14
 
 import java.util.ArrayList;
 import java.util.List;
