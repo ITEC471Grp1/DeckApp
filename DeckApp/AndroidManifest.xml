@@ -31,6 +31,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.itec471.deckcalculator.CalulatorMain "/>
         </activity>
+        
     </application>
-
+         <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
