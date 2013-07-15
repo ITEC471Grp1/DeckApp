@@ -1,5 +1,5 @@
 package com.itec471.deckcalculator;
-// Jamie 7/14
+// Jamie 7/14 changed
 
 public enum ComponentType {
 	UNKNOWN ("Unknown"),
