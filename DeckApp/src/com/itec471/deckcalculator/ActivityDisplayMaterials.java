@@ -21,20 +21,20 @@ import android.widget.ListView;
  * @author Jamie
  *
  */
-public class DisplayCalculations extends Activity {
+public class ActivityDisplayMaterials extends Activity {
 
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_display_calculations);
+		setContentView(R.layout.activity_display_materials);
 		
 		final GridView gridview = (GridView) findViewById(R.id.grid_view);
 		
 		// Get the message from the intent
 		Intent intent = getIntent();
 		ArrayList<String> messages = 
-				intent.getExtras().getStringArrayList(CalulatorMain.OUTPUT_MESSAGE);
+				intent.getExtras().getStringArrayList(ActivityCalulatorMain.OUTPUT_MESSAGE);
 		
 		// Create an adapter to display the list
 		ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(
@@ -71,7 +71,7 @@ public class DisplayCalculations extends Activity {
 	
 	public void saveToDb(View view){
 		// to do...save the data to the database
-		Configuration config = Configuration.getInstance();
+		DeckModel config = DeckModel.getInstance();
 		DBConn.save("jrouse5@radford.edu", "My Deck", config.getHeight(), config.getLength(),
 					 config.getWidth(), config.getSqft()); 
 	}

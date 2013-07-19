@@ -12,7 +12,7 @@ import java.util.List;
 // This class is not complete. Will need additional variables and methods,
 //  but I hope the concept is clear. This is the class that will be used
 //  to store all information about a particular deck configuration.
-public class Configuration {
+public class DeckModel {
 	private final static double CONVERSION_FACTOR = 144.0; // for converting from sq inches to sq feet
 	private double length;
 	private double width;
@@ -23,29 +23,31 @@ public class Configuration {
 	private Lumber rimJoists;
 	private Lumber beams;
 	private Lumber posts;
-	private List<DeckComponent> componentList; // the setter method for each lumber and hardware 
+	private Hardware joistHangers;
+	private Hardware noEightWoodScrews;
+	private List<ComponentModel> componentList; // the setter method for each lumber and hardware 
 									 //  variable needs to add that variable to this list
 	
-	private Configuration(){
+	private DeckModel(){
 	}
 	
-	private static class ConfigurationHolder{
-		public static final Configuration INSTANCE = new Configuration();
+	private static class DeckModelHolder{
+		public static final DeckModel INSTANCE = new DeckModel();
 	}
 	
-	public static Configuration getInstance(double len, double wdth, double hght){
-		Configuration config = ConfigurationHolder.INSTANCE;
-		config.setLength(len);
-		config.setWidth(wdth);
-		config.setHeight(hght);
-		config.setSqft(wdth * len / CONVERSION_FACTOR);
-		config.componentList = new ArrayList<DeckComponent>();
+	public static DeckModel getInstance(double len, double wdth, double hght){
+		DeckModel deckModel = DeckModelHolder.INSTANCE;
+		deckModel.setLength(len);
+		deckModel.setWidth(wdth);
+		deckModel.setHeight(hght);
+		deckModel.setSqft(wdth * len / CONVERSION_FACTOR);
+		deckModel.componentList = new ArrayList<ComponentModel>();
 		
-		return config;		
+		return deckModel;		
 	}
 	
-	public static Configuration getInstance(){
-		return ConfigurationHolder.INSTANCE;
+	public static DeckModel getInstance(){
+		return DeckModelHolder.INSTANCE;
 	}
 
 	public double getLength() {
@@ -126,5 +128,21 @@ public class Configuration {
 	public void setPosts(Lumber posts) {
 		this.posts = posts;
 		componentList.add(posts);
+	}
+	
+	public Hardware getJoistHangers(){
+		return joistHangers;
+	}
+	
+	public void setJoistHangers(Hardware joistHangers) {
+		this.joistHangers = joistHangers;		
+	}
+	
+	public Hardware getNoEightWoodScrews(){
+		return noEightWoodScrews;
+	}
+
+	public void setNoEightWoodScrews(Hardware noEightWoodScrews) {
+		this.noEightWoodScrews = noEightWoodScrews;		
 	}
 }

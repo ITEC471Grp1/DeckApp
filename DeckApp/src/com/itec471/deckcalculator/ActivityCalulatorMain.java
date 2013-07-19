@@ -21,11 +21,11 @@ import android.util.Log;
  * @author ITEC-471 Grp2
  *
  */
-public class CalulatorMain extends Activity {
+public class ActivityCalulatorMain extends Activity {
 	public final static String OUTPUT_MESSAGE = "com.itec471.deckcalculator.MESSAGE";
 	public final static String TAG = "CalculatorMain";
 	public ArrayList<String> results = new ArrayList<String>();
-	private Configuration configuration;
+	private DeckModel configuration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +46,10 @@ public class CalulatorMain extends Activity {
      *  @param view
      */
     public void initiateCalc(View view){
-    	double len = 0, width = 0, height = 0, sqft = 0;
+double len = 0, width = 0, height = 0, sqft = 0;
     	
     	// Create the intent for output
-    	Intent intent = new Intent(this, DisplayCalculations.class);
+    	Intent intent = new Intent(this, ActivityDisplayMaterialsList.class);
     	
     	// Get the values input by user
     	EditText lenText = (EditText)findViewById(R.id.edit_length);
@@ -68,7 +68,7 @@ public class CalulatorMain extends Activity {
     	}    	
     	
     	// Create the deck configuration
-    	configuration = Configuration.getInstance(len, width, height);
+    	configuration = DeckModel.getInstance(len, width, height);
     	
     	// Calculate total sq feet and add to output
     	sqft = configuration.getSqft();
@@ -76,22 +76,20 @@ public class CalulatorMain extends Activity {
     	
     	// Add some formatting
     	results.add("  ");
-    	results.add("Materials");
+    	results.add("Materials List");
     	
     	// Create a calculator using the configuration argument
     	MaterialsCalculator calc = new MaterialsCalculator(configuration);
     	
     	// Get the list of lumber and add to the output
-    	List<String> temp = calc.calculateLumber();
+    	List<String> temp = calc.calculateMaterials();
     	results.addAll(temp);
     	
-    	// Get the list of hardware and add to the output
-    		// to do....create the needed methods in the Hardware
-    	    //   and MaterialsCalculator classes
-    	
     	// Get the total price and add to output
+    	NumberFormat formatter = NumberFormat.getCurrencyInstance();
+		String totalPrice = formatter.format(calc.getTotalPrice());
     	results.add("  ");
-    	results.add("Total Price: " + calc.getTotalPrice());
+    	results.add("Total Price: " + totalPrice);
     	
     	// Pass the array to the the intent and start the activity
     	intent.putStringArrayListExtra(OUTPUT_MESSAGE, results);
