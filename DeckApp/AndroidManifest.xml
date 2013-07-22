@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:debuggable="true" >
         <activity
-            android:name="com.itec471.deckcalculator.CalulatorMain"
+            android:name="com.itec471.deckcalculator.ActivityCalulatorMain"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +24,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.itec471.deckcalculator.DisplayCalculations"
+            android:name="com.itec471.deckcalculator.ActivityDisplayMaterials"
             android:label="@string/title_activity_display_calculations" 
-            android:parentActivityName="com.itec471.deckcalculator.CalulatorMain" >
+            android:parentActivityName="com.itec471.deckcalculator.ActivityCalulatorMain" >
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.itec471.deckcalculator.CalulatorMain "/>

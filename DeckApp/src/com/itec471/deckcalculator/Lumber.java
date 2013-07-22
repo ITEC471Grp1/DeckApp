@@ -5,7 +5,7 @@ package com.itec471.deckcalculator;
  * @author Jamie
  *
  */
-public class Lumber extends DeckComponent{
+public class Lumber extends ComponentModel{
     private String species;  // could use enum or final static String, can change later if other species are used
     private double length;
     
@@ -33,9 +33,7 @@ public class Lumber extends DeckComponent{
 		this.length = length;
 	}
 	
-	// this will probably need to be refined
-	public String toString(){
-		return component.NAME + "\t\t" + quantity + " " + (int)length + "' " + 
-				material.NAME + "\t\t $" + this.getTotalPrice();
+	public String getQuantityAndDescription(){
+		return "\t\t(" + quantity + ") " + (int)length + "' " + material.NAME; 
 	}
 }
