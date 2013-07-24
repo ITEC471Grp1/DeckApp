@@ -133,6 +133,7 @@ public class MaterialsCalculator {
 	
 	private void calculateNoEightWoodScrews(){
 		Hardware noEightWoodScrews = new Hardware(ComponentType.FASTENERS);
+		noEightWoodScrews.setMaterialType(MaterialType.NO_EIGHT_WOOD_SCREWS);
 		
 		double pricePerScrew = 0.061;
 		double quantity =0;
