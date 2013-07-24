@@ -135,20 +135,18 @@ public class MaterialsCalculator {
 		Hardware noEightWoodScrews = new Hardware(ComponentType.FASTENERS);
 		noEightWoodScrews.setMaterialType(MaterialType.NO_EIGHT_WOOD_SCREWS);
 		
-		double pricePerScrew = 0.061;
-		double quantity =0;
-		double totalScrewPrice;
-		int amtPerSqFt = 4;
+		noEightWoodScrews.setUnitPrice(0.061);
+		
 		
 			// to do...calculate the number of boxes of #8
 			//  wood screws, the total price, and set these
 			//  values in the noEightWoodScrews variable
-		quantity = (amtPerSqFt * deckModel.getSqft());		
-		totalPrice += (pricePerScrew * quantity);  
-				
-		noEightWoodScrews.getTotalPrice();				
+		quantity = (amtPerSqFt * deckModel.getSqft());		 
+		
+		noEightWoodScrews.setCount(quantity);
+		totalPrice += noEightWoodScrews.getTotalPrice();				
 		totaledList.add(noEightWoodScrews.getNameAndCost());
-		noEightWoodScrews.getQuantityAndDescription();
+		totaledList.add(noEightWoodScrews.getQuantityAndDescription());
 		deckModel.setNoEightWoodScrews(noEightWoodScrews);
 	}
 }
