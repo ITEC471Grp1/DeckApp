@@ -137,11 +137,13 @@ public class MaterialsCalculator {
 		
 		noEightWoodScrews.setUnitPrice(0.061);
 		
+	
 		
-			// to do...calculate the number of boxes of #8
+		double amtPerSqFt = (4);
+		// to do...calculate the number of boxes of #8
 			//  wood screws, the total price, and set these
 			//  values in the noEightWoodScrews variable
-		quantity = (amtPerSqFt * deckModel.getSqft());		 
+		int quantity = (int) (amtPerSqFt  * deckModel.getSqft());		 
 		
 		noEightWoodScrews.setCount(quantity);
 		totalPrice += noEightWoodScrews.getTotalPrice();				
