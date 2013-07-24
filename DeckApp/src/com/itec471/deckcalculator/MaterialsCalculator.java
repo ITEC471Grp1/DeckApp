@@ -30,7 +30,7 @@ public class MaterialsCalculator {
 	//	calculateBeams();
 	//	calculatePosts();
 		calculateJoistHangers();
-	//	calculateNoEightWoodScrews();
+		calculateNoEightWoodScrews();
 		
 		// to do...add calculate methods for other lumber
 		//  and hardware that will do calculations and
@@ -134,13 +134,20 @@ public class MaterialsCalculator {
 	private void calculateNoEightWoodScrews(){
 		Hardware noEightWoodScrews = new Hardware(ComponentType.FASTENERS);
 		
+		double pricePerScrew = 0.061;
+		double quantity =0;
+		double totalScrewPrice;
+		int amtPerSqFt = 4;
+		
 			// to do...calculate the number of boxes of #8
 			//  wood screws, the total price, and set these
 			//  values in the noEightWoodScrews variable
-		
-		totalPrice += noEightWoodScrews.getTotalPrice();
+		quantity = (amtPerSqFt * deckModel.getSqft());		
+		totalPrice += (pricePerScrew * quantity);  
+				
+		noEightWoodScrews.getTotalPrice();				
 		totaledList.add(noEightWoodScrews.getNameAndCost());
-		totaledList.add(noEightWoodScrews.getQuantityAndDescription());
+		noEightWoodScrews.getQuantityAndDescription();
 		deckModel.setNoEightWoodScrews(noEightWoodScrews);
 	}
 }

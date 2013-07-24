@@ -72,7 +72,7 @@ public class ActivityDisplayMaterials extends Activity {
 	public void saveToDb(View view){
 		// to do...save the data to the database
 		DeckModel config = DeckModel.getInstance();
-		DBConn.save("jrouse5@radford.edu", "My Deck", config.getHeight(), config.getLength(),
-					 config.getWidth(), config.getSqft()); 
+		//DBConn.save("jrouse5@radford.edu", "My Deck", config.getHeight(), config.getLength(),
+		//			 config.getWidth(), config.getSqft()); 
 	}
 }

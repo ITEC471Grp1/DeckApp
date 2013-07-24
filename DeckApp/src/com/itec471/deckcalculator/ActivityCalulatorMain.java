@@ -4,6 +4,7 @@ package com.itec471.deckcalculator;
 //Jamie GitHub test 7/13
 //Brandon test 7/15
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import android.os.Bundle;
@@ -30,7 +31,7 @@ public class ActivityCalulatorMain extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calulator_main);
+        setContentView(R.layout.activity_calculator_main);
     }
 
 
@@ -49,7 +50,7 @@ public class ActivityCalulatorMain extends Activity {
 double len = 0, width = 0, height = 0, sqft = 0;
     	
     	// Create the intent for output
-    	Intent intent = new Intent(this, ActivityDisplayMaterialsList.class);
+    	Intent intent = new Intent(this, ActivityDisplayMaterials.class);
     	
     	// Get the values input by user
     	EditText lenText = (EditText)findViewById(R.id.edit_length);
