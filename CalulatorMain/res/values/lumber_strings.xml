@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lumber resources are under construction -->
+    <string name="span_rated_decking">x 6" x 5/4" Treated Decking</string>
+    <string name="two_by_four">2 x 4</string>
+    <string name="two_by_six">2 x 6</string>
+    <string name="two_by_eight">2 x 8</string>
+    <string name="two_by_ten">2 x 10</string>
+    <string name="two_by_twelve">2 x 12</string>
+    <string name="four_by_four">4 x 4</string>
+    <string name="six_by_six">6 x 6</string>
+    
+    <!-- Correct price to be resourced later. -->
+	<string name="price_8ft_span_rated_decking">3.97</string>
+	<string name="price_10ft_span_rated_decking">5.37</string>
+	<string name="price_12ft_span_rated_decking">6.97</string>
+	<string name="price_16ft_span_rated_decking">8.47</string>
+	<string name="price_two_by_four">0.00</string>
+	<string name="price_two_by_six">0.00</string>
+	<string name="price_two_by_eight">0.00</string>
+	<string name="price_two_by_ten">0.00</string>
+	<string name="price_two_by_twelve">0.00</string>
+	<string name="price_four_by_four">0.00</string>
+	<string name="price_six_by_six">0.00</string>
+</resources>
